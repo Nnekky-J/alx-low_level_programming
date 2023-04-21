@@ -1,7 +1,7 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
-  *main Entry point
-  *Description: '102-print_comb5.c'
+  * main - Entry point
+  *Description: - 'Software is eating the World'
   *Return: Always 0 (success)
   */
 int main(void)
