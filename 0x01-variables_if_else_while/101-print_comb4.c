@@ -1,42 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
   * main - Entry point
   *Description: 'print all possible'
   *Return: Always 0 (Successful)
   */
-
 int main(void)
 {
-	int i = '0';
-	int j = '0';
-	int k = '0';
+	int n, m, l;
 
-	while (i <= '7')
+	for (n = 48; n < 58; n++)
 	{
-		while (j <= '8')
+		for (m = 49; m < 58; m++)
 		{
-			while (k <= '9')
+			for (l = 50; l < 58; l++)
 			{
-				if (i < j && j < k)
+				if (l > m && m > n)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (!(i == '7' && j == '8' && k == '9'))
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				k++;
 			}
-			k = 'o';
-			j++;
 		}
-		j = 'o';
-		i++;
 	}
 	putchar('\n');
 	return (0);
