@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
   *times_table - Prints the times table
   *
   *REturn: No returns
   *
   */
+
 void times_table(void)
 {
 	int num, mult, prod;
