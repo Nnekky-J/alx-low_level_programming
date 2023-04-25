@@ -2,7 +2,7 @@
 /**
   * _abs - Checks the integer of numbers
   *
-  *@int: Input number as an integer
+  *@i: Input number as an integer
   *
   *Return: - absolute value
   *
