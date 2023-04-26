@@ -11,23 +11,25 @@ int main(void)
 
 {
 
-	int i = 0;
-	long j = 1, k = 2;
+	long int i, j, k, next;
+	
+	j = 1;
 
-	while (i < 50)
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-	if (i == 0)
-	printf("%ld", j);
-	else if (i == 1)
-	printf(". %ld", k);
-	else
-	{
-	k += j;
-	j = k - j;
-	printf(", %ld", k);
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	i++;
-	}
-	printf("\n");
+
 	return (0);
 }
