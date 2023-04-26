@@ -3,12 +3,14 @@
 /**
   *main - Prints the first 52 Fibonacci numbers, starting with 1 and 2
   *
-  *Return: Always 0 (Success)
+  *Return: Nothing!
   *
   */
 
 int main(void)
+
 {
+
 	int i = 0;
 	long j = 1, k = 2;
 
