@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
   *main - prints the first 50 Fibonacci numbers, starting with 1 and 2
   *
   *Return: Nothing
   *
   */
+
 int main(void)
 {
 	int i = 0;
