@@ -2,13 +2,12 @@
 #include <stdio.h>
 
 /**
-  *print_number - Prints an integer
-  *
-  *@n: The integer to be printed
-  *
-  *Return: Always 0 (Success)
-  *
-  */
+ * print_number - Prints an integer.
+ *
+ *@n: Integer to print
+ *
+ *Return: Nothing!
+ */
 
 void print_number(int n)
 {
@@ -19,7 +18,7 @@ void print_number(int n)
 	{
 	n *= -1;
 	k = n;
-	_putchar('_');
+	_putchar('-');
 	}
 	k /= 10;
 	if (k != 0)
