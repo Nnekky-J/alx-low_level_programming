@@ -1,16 +1,16 @@
 #include <stdio.h>
+#include "main.h"
 /**
-  *main - Prints the name of the function
-  *
-  *@argc: The size of the arg passed
-  *
-  *@argv: The argument passed
-  *
-  *Return: The name of the task
-  */
-int main(int argc, char *argv[])
+ *main - Prints the name of the program
+ *
+ *@argc: The number of arguments
+ *
+ *@argv: The inputed arguments
+ *
+ *Return: Always 0 (Success)
+ */
+int main(int argc __attribute__ ((unused)), char *argv[])
 {
-	printf("%d\n", argc);
-	printf("%s\n", argv[0]);
+	printf("%s\n", *argv);
 	return (0);
 }
