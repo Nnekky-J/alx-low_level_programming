@@ -14,10 +14,10 @@ int main(int argc __attribute__ ((unused)), char *argv[])
 {
 	int u, p, sum;
 
-	if (argc < 2)
+	if (argc < 1)
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 
 	sum = 0;
