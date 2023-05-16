@@ -1,0 +1,43 @@
+#include <stdlib.h>
+#include "main.h"
+/**
+  *argstostr - Concatenates all the arguments of your program
+  *
+  *@ac: Input
+  *
+  *@av: Double pointer array
+  *
+  *Return: 0
+  */
+char *argstostr(int ac, char **av)
+{
+	int j, k;
+	int l = 0, m = 0;
+	char *str;
+
+	if (ac == 0 || av == NULL)
+		return (NULL);
+	for (j = 0; j < ac; j++)
+	{
+		for (k = 0; av[j][k]; k++)
+			m++;
+	}
+	m += ac;
+
+	str = malloc(sizeof(char) * m + 1);
+	if (str == NULL)
+		return (NULL);
+	for (j = 0; j < ac; j++)
+	{
+		for (k = 0; av[j][k]; k++)
+		{
+			str[l] = av[j][k];
+			l++;
+		}
+		if (str[l] == '\0')
+		{
+			str[l++] = '\n';
+		}
+	}
+	return (str);
+}
