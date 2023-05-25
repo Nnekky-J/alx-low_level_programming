@@ -20,7 +20,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(numbers, n);
 
-	
 	for (k = 0; k < n; k++)
 	{
 		j = va_arg(numbers, char *);
